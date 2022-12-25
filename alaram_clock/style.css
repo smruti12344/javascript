@@ -1,0 +1,323 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@5500&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(161, 41, 190);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+::placeholder {
+  color: floralwhite;
+  margin-left: 3px;
+  font-size: 12px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #9698b9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8f94fb, #7377bd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8f94fb, #777ab7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#heading {
+  height: 45px;
+  width: 20%;
+  margin-left: 40%;
+  color: #595a6d;
+  border-radius: 5px;
+  margin-top: 3%;
+  background: #11998e;
+  position: relative;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#heading h1 {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+  margin-top: 6px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+#light-change {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  margin-left: 85%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+#light-change i{
+  color: whitesmoke;
+  opacity: 0.6;
+}
+
+#light-change i:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px 6px rgb(73, 71, 71);
+  cursor: pointer;
+}
+
+.container {
+  width: 40%;
+  /* border: 2px solid red; */
+  margin-left: 30%;
+  margin-top: 1%;
+  padding: 10px;
+  border-radius: 30px;
+  background: #141e30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#clock-area {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  /* border: 1px solid white; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+#clock-area img {
+  height: 80%;
+  width: 20%;
+}
+
+#clock-area h1 {
+  margin-left: -20%;
+  width: 30%;
+  margin-left: 3%;
+  font-size: 1.7rem;
+}
+
+#set-alarm-area {
+  height: 60px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  border-radius: 5px;
+  /* border: 2px solid red; */
+  background: #0052d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#input-btn {
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+.input-area {
+  height: 60%;
+  width: 12%;
+  outline: none;
+  background: none;
+  margin-top: 10px;
+  border: 2px solid whitesmoke;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.ampm {
+  height: 60%;
+  width: 13%;
+  margin-left: 3%;
+  border-radius: 5px;
+  background: none;
+  color: whitesmoke;
+
+}
+
+
+.btn {
+  height: 60%;
+  width: 15%;
+  margin-left: 4%;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  color: whitesmoke;
+  background: none;
+}
+
+.set-alarm:hover {
+  background: #b7bd51;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45b649, #dce35b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45b649, #dce35b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+}
+
+.stop-alarm:hover {
+  background: #e44d26;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f16529, #e44d26);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f16529, #e44d26);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+}
+
+#delete-alarm-area {
+  width: 100%;
+  /* border: 2px solid white; */
+  /* margin-top: 5%; */
+}
+
+#delete-alarm-area h1 {
+  /* margin-left: 10%; */
+  margin-top: 5px;
+  
+}
+
+.list-alarms {
+  width: 90%;
+  /* border: 2px solid red; */
+  margin-top: 3%;
+  margin-left: 5%;
+  list-style: none;
+  padding: 4px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #4ecdc4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #556270,
+    #4ecdc4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #556270,
+    #4ecdc4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.delete-alarm {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #850521;
+  position: relative;
+}
+
+.delete-alarm button {
+
+  margin-left: 40%;
+  height: 30px;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 13px;
+  /* border: 2px solid white; */
+}
+
+#upcoming-alarm{
+  width: 30%;
+  font-size: 16px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+
+.delete-btn:hover {
+  background: #e52d27; /* fallback for old browsers */
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    to right,
+    #b31217,
+    #e52d27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b31217,
+    #e52d27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* this class are used in javaScript */
+
+.nightColor {
+  animation: color 2s ease-in-out 1;
+  background: black;
+  
+}
+
+@keyframes color{
+  0%{
+    background:rgb(143, 141, 141);
+  }
+  25%{
+    background: rgb(125, 123, 123);
+  }
+  50%{
+    background: rgb(77, 76, 76);
+  }
+  100%{
+    background: rgb(34, 34, 34);
+  }
+}
+/* adding a shake animation in clock image when alarm is ringing */
+.shake{
+    animation-name:              shake;    
+    animation-duration:          0.8s;
+    animation-iteration-count:   infinite;
+    animation-timing-function:   linear;
+    transform-origin:            50% 100%;
+  }
+
+
+@keyframes shake {
+  0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+  20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+  30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+  80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+  90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+  100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+ }

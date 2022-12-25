@@ -1,0 +1,17 @@
+#outer{
+    height: 400px;
+    width: 400px;
+    box-sizing: border-box;
+    background-color: cyan;
+    padding-top: 10%;
+    padding-left: 10%;
+  
+}
+#inner{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    box-sizing: border-box ;
+    border: 1px solid black;
+    
+}

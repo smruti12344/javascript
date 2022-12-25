@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+
+    <!-- here we are link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link our css file  -->
+    <link rel="stylesheet" href="style.css">
+
+    
+    
+</head>
+<body>
+
+    <!-- Heading area  -->
+    <div id="heading">
+        <h1>Alarm Clock</h1>
+
+        <div id="light-change">
+            <i class="fa-solid fa-moon"></i>     
+        </div>
+        
+    </div>
+
+    <!-- container conatain the body of the structure -->
+    
+    <div class="container">
+
+        <!-- clock area display the current time -->
+        <section id="clock-area">
+
+            <img class="image" src="./Assets/Alarm_Clock.png" alt="Alarm clock image">
+
+            <h1 id="display-time"></h1>
+
+        </section>
+
+        <section id="set-alarm-area">
+          
+        
+        <!-- Input area of set alarm  -->
+
+        <div id="input-btn">
+            
+            <input class="input-area"  type="number" name="hour" id="hour" placeholder="HH" min="0" max="12" required>
+            <input class="input-area" type="number" name="minute" id="minute" placeholder="MM" min="0" max="59" required>
+            <input class="input-area" type="number" name="second" id="second" placeholder="SS" min="0" max="59" required>
+
+            <select name="" id="ampm" class="btn">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+
+            <button type="submit" id="set" class="btn set-alarm">Set Alarm</button>
+            <button type="reset" class="btn stop-alarm">Stop Alarm</button>
+
+
+        </div>
+
+        </section>
+
+        <!-- upcoming alarms and delete button  -->
+        <!-- here we are adding a list via js  -->
+
+        <section id="delete-alarm-area">
+            <h1>Upcoming Alarms</h1>
+
+            <ul class="list-alarms" id="alarm-list">
+
+            </ul>
+
+        </section>
+
+
+
+        </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

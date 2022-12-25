@@ -1,0 +1,14 @@
+/* body{
+    margin: 0px;
+} */
+#ball{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    /* box-sizing: border-box; */
+    top: 45%;
+    left: 45%;
+    
+}
